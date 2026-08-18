@@ -1,0 +1,6 @@
+{
+  "name": "Apex Superbike Showcase",
+  "description": "Interactive telemetry-style superbike showcase presenting legendary flagship motorcycles with authentic engine sound synthesis, real-time quickshifter and autoblipper gear acoustics, dyno simulators, 6-axis IMU gyroscopes, spec comparator matrix, brand heritage timelines, custom bike builder, and an AI telemetry concierge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

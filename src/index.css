@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-orbitron: 'Orbitron', -apple-system, sans-serif;
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-rajdhani: 'Rajdhani', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-orbitron {
+  font-family: var(--font-orbitron);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-rajdhani {
+  font-family: var(--font-rajdhani);
+}
+
+.font-telemetry {
+  font-family: var(--font-mono);
+}
+
+/* Carbon Fiber Aesthetic Pattern - Elegant Dark */
+.carbon-bg {
+  background: 
+    linear-gradient(45deg, #0d121d 25%, transparent 25%), 
+    linear-gradient(-45deg, #0d121d 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #0d121d 75%), 
+    linear-gradient(-45deg, transparent 75%, #0d121d 75%);
+  background-size: 20px 20px;
+  background-color: #0b0f19;
+}
+
+.bg-carbon {
+  background: 
+    linear-gradient(45deg, #0d121d 25%, transparent 25%), 
+    linear-gradient(-45deg, #0d121d 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #0d121d 75%), 
+    linear-gradient(-45deg, transparent 75%, #0d121d 75%);
+  background-size: 20px 20px;
+  background-color: #0b0f19;
+}
+
+/* Clear Liquid Glass Aesthetic (Untinted, Pure Crystal Water-Glass) */
+.glass, .liquid-glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.37),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.liquid-nav {
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.liquid-tab-bar {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.liquid-tab-active {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.7);
+  color: #00F0FF;
+  box-shadow: 
+    0 0 20px rgba(0, 240, 255, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.35);
+}
+
+.glass-card, .liquid-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px 2px rgba(255, 255, 255, 0.15);
+}
+
+.glass-border-cyan {
+  border: 1px solid rgba(0, 240, 255, 0.35);
+}
+
+.glass-border-red {
+  border: 1px solid rgba(255, 0, 85, 0.35);
+}
+
+/* Circular Gauge & Conic Gradient */
+.gauge-gradient {
+  background: conic-gradient(from 180deg, #00F0FF 0deg, #00F0FF 280deg, rgba(255, 255, 255, 0.08) 280deg);
+}
+
+/* Neon Glows */
+.neon-cyan-glow, .text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+}
+
+.neon-red-glow, .text-glow-red {
+  text-shadow: 0 0 10px rgba(255, 0, 85, 0.6);
+}
+
+.neon-gold-glow, .text-glow-gold {
+  text-shadow: 0 0 10px rgba(255, 184, 0, 0.6);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+}
+
+.glow-red {
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.35);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(255, 184, 0, 0.35);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.35);
+}
+
+/* Telemetry HUD specific glass wrappers */
+.hud-glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+.hud-glass-red {
+  background: rgba(255, 0, 85, 0.06);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 0, 85, 0.35);
+  box-shadow: 
+    0 10px 30px rgba(255, 0, 85, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Custom Scrollbar for HUD panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #192231;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00F0FF;
+}
+
+/* Telemetry Grid background lines */
+.telemetry-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+
